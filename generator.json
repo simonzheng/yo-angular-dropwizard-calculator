@@ -2,5 +2,17 @@
 	"baseName": "myapp",
 	"packageName": "com.mycompany.myapp",
 	"entities": [],
-	"resources": []
+	"resources": [
+		{
+			"name": "add",
+			"methods": [
+				{
+					"methodName": "addmethod",
+					"methodType": "GET",
+					"methodPath": "/add",
+					"formParams": []
+				}
+			]
+		}
+	]
 }

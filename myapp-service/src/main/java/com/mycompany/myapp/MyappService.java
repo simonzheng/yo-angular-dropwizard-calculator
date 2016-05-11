@@ -3,7 +3,7 @@ package com.mycompany.myapp;
 import com.mycompany.myapp.config.*;
 
 
-
+import com.mycompany.myapp.resources.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.google.common.base.Optional;
@@ -55,8 +55,9 @@ public class MyappService extends Application<MyappConfiguration> {
     public void run(MyappConfiguration configuration,
                     Environment environment) throws Exception {
         environment.jersey().setUrlPattern("/myapp/*");
-        environment.jersey().disable();
         
+        
+        environment.jersey().register(new AddResource());
         
     }
 }
