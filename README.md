@@ -1,0 +1,1 @@
+Noting that I'm running into a deadend with creating an entity according to https://github.com/rayokota/generator-angular-dropwizard and then running grunt server. Discontinuing for now. (20160511 3:36pm EST)
